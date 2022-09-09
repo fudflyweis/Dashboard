@@ -18,7 +18,7 @@ const ImagesGallery = () => {
             if (!shouldCancel && response.data && response.data.length > 0) {
                 setImages(
                     response.data.map(url => ({
-                        original: `${url}=w1024`,
+                        original: `${url}=w500-h500`,
                         thumbnail: `${url}=w100`
                     }))
                 );
