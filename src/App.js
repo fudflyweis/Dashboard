@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Login from "./components/forms/Login";
 import History from "./components/pages/history/History";
+import Gallery from "./components/pages/gallery/gallery";
 import ManageProfiles from "./components/pages/manageProfiles/ManageProfiles";
 import Payments from "./components/pages/payments/Payments";
 import UploadServices from "./components/pages/uploadservices/UploadServices";
@@ -27,8 +28,8 @@ import VendorTaskPerformed from "./vendorPanel/components/pages/tasks/TaskPerfor
 import VendorAcceptRequest from "./vendorPanel/components/pages/acceptrequest/AcceptRequest";
 import ManageProducts from "./vendorPanel/components/pages/manageProducts/ManageProducts";
 import ManagePartnerMerchant from "./vendorPanel/components/pages/partnermerchant/ManagePartnerMerchant";
-import ManageCategoryDetails from "./vendorPanel/components/pages/managecategorydetails/CategoryDetails"
-import PaidAdsFeature from "./vendorPanel/components/pages/paidAds/AdsFeature"
+import ManageCategoryDetails from "./vendorPanel/components/pages/managecategorydetails/CategoryDetails";
+import PaidAdsFeature from "./vendorPanel/components/pages/paidAds/AdsFeature";
 import VendorOrders from "./vendorPanel/components/pages/orders/VendorOrders";
 import VendorSupport from "./vendorPanel/components/pages/support/VendorSupport";
 import Commission from "./vendorPanel/components/pages/commission/Commission";
@@ -54,6 +55,7 @@ function App() {
         <Route path="/forgotPassword" element={<Forgot />} />
         <Route path="/vendors" element={<Vendors />} />
         <Route path="/history" element={<History />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/manageprofiles" element={<ManageProfiles />} />
         <Route path="/payments" element={<Payments />} />
         <Route path="/uploadservices" element={<UploadServices />} />
@@ -78,8 +80,14 @@ function App() {
         <Route path="/taskperformed" element={<VendorTaskPerformed />} />
         <Route path="/request" element={<VendorAcceptRequest />} />
         <Route path="/manageproducts" element={<ManageProducts />} />
-        <Route path="/managepartnermerchant" element={<ManagePartnerMerchant />} />
-        <Route path="/managecategorydetails" element={<ManageCategoryDetails />} />
+        <Route
+          path="/managepartnermerchant"
+          element={<ManagePartnerMerchant />}
+        />
+        <Route
+          path="/managecategorydetails"
+          element={<ManageCategoryDetails />}
+        />
         <Route path="/paidAdsFeature" element={<AdsFeature />} />
         <Route path="/vendorCategories" element={<VendorCategories />} />
         <Route path="/vendorOrders" element={<VendorOrders />} />

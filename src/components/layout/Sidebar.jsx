@@ -34,6 +34,11 @@ const Sidebar = ({ hamb, setHamb }) => {
       name: "History",
     },
     {
+      icon: <MdHistory className="text-xl mr-3" />,
+      link: "/gallery",
+      name: "Gallery",
+    },
+    {
       icon: <CgProfile className="text-xl mr-3" />,
       link: "/manageprofiles",
       name: "Manage Profiles",
