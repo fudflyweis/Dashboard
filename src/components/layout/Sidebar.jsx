@@ -20,7 +20,7 @@ import {
   MdOutlineFileUpload,
 } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
-import { AiFillPlusCircle } from "react-icons/ai"
+import { AiFillPlusCircle } from "react-icons/ai";
 const Sidebar = ({ hamb, setHamb }) => {
   const nav = [
     {
@@ -32,11 +32,6 @@ const Sidebar = ({ hamb, setHamb }) => {
       icon: <MdHistory className="text-xl mr-3" />,
       link: "/history",
       name: "History",
-    },
-    {
-      icon: <MdHistory className="text-xl mr-3" />,
-      link: "/gallery",
-      name: "Gallery",
     },
     {
       icon: <CgProfile className="text-xl mr-3" />,
@@ -64,6 +59,11 @@ const Sidebar = ({ hamb, setHamb }) => {
       name: "Products",
     },
 
+    {
+      icon: <MdHistory className="text-xl mr-3" />,
+      link: "/gallery",
+      name: "Gallery",
+    },
     {
       icon: <MdOutlineCategory className="text-xl mr-3" />,
       link: "/categories",
@@ -108,22 +108,22 @@ const Sidebar = ({ hamb, setHamb }) => {
   ];
   return (
     <>
-      <aside className="p-4">
+      <aside className="p-4 h-fit">
         {/* Top */}
-        <div className="w-full md:hidden relative  p-2 mb-4">
+        <div className="w-full md:hidden relative h-full p-2 mb-4">
           <RiCloseLine
             onClick={() => setHamb(!hamb)}
             className="text-3xl  absolute top-2 sm:hover:rotate-[228deg] transition-transform font-bold right-2 sm:hover:text-[22px] text-[rgb(241,146,46)] cursor-pointer"
           />
         </div>
         {/* Logo */}
-        <figure className="flex  flex-col items-center">
+        <figure className="flex h-full flex-col items-center">
           <span className="font-bold text-[rgb(241,146,46)]">
             <img src={image} className="h-24" />
           </span>
         </figure>
         {/* Nav-menu */}
-        <nav className="py-6">
+        <nav className="py-6 h-max		">
           {nav.map((nav) => {
             return (
               <Link to={nav.link} key={nav.name} className="">

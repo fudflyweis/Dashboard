@@ -3,7 +3,6 @@ import HOC from "../layout/HOC";
 import { MdDashboardCustomize, MdOutlineLibraryBooks } from "react-icons/md";
 import { FaUserFriends } from "react-icons/fa";
 import Cards from "../Charts/Chart";
-
 export const dash = (data) => {
   console.log(data, "dsjkfhjkashfjk");
   return data;

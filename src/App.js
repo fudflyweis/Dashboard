@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Login from "./components/forms/Login";
 import History from "./components/pages/history/History";
-import Gallery from "./components/pages/gallery/gallery";
 import ManageProfiles from "./components/pages/manageProfiles/ManageProfiles";
 import Payments from "./components/pages/payments/Payments";
 import UploadServices from "./components/pages/uploadservices/UploadServices";
@@ -10,6 +9,7 @@ import Dashboard from "./components/pages/Dashboard";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Products from "./components/pages/products/Products";
+import Gallery from "./components/pages/gallery/gallery";
 import Categories from "./components/pages/categories/Categories";
 import Banner from "./components/pages/banner/Banner";
 import Orders from "./components/pages/orders/Orders";
