@@ -8,16 +8,16 @@ import "./gallery.css";
 const ImagesGallery = () => {
   const images = [
     {
-      original: "https://picsum.photos/id/101/1000/600/",
-      thumbnail: "https://picsum.photos/id/1018/250/150/",
+      original: "https://c1.wallpaperflare.com/preview/580/802/425/car-mercedes-slk-auto.jpg",
+      thumbnail: "https://c1.wallpaperflare.com/preview/580/802/425/car-mercedes-slk-auto.jpg",
     },
     {
-      original: "https://picsum.photos/id/1015/1000/600/",
-      thumbnail: "https://picsum.photos/id/1015/250/150/",
+      original: "https://wallpaperaccess.com/full/534288.jpg",
+      thumbnail: "https://wallpaperaccess.com/full/534288.jpg",
     },
     {
-      original: "https://picsum.photos/id/1019/1000/600/",
-      thumbnail: "https://picsum.photos/id/1019/250/150/",
+      original: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80",
+      thumbnail: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80",
     },
   ];
 

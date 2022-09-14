@@ -135,9 +135,9 @@ const Products = () => {
           </span>
           <button
             onClick={() => {
-              navigate("/addProduct");
+              setPopup(!popup);
             }}
-            className="md:py-2 px-3 md:px-4 py-1 rounded-sm bg-[rgb(241,146,46)] text-white tracking-wider"
+            className="md:py-2 px-3 md:px-4 py-1 rounded-r-lg rounded-l-lg bg-red-600 text-white tracking-wider"
           >
             Add Products
           </button>
@@ -152,10 +152,10 @@ const Products = () => {
         >
           <div className="bg-slate-100 sm:h-[90vh] h-[80vh] overflow-y-auto  lg:w-3/6  md:w-4/6 w-5/6 mx-auto  rounded-lg">
             <div className="flex sticky top-0 py-3 px-5 bg-slate-100 justify-between">
-              <span className=" font-semibold text-[rgb(241,146,46)] ">
+              <span className=" font-semibold text-black ">
                 Add Products
               </span>
-              <div className="text-[rgb(241,146,46)] py-0.5 text-2xl cursor-pointer font-medium tracking-wider">
+              <div className="text-black py-0.5 text-2xl cursor-pointer font-medium tracking-wider">
                 <IoMdClose
                   onClick={() => {
                     setEdit("");
@@ -176,7 +176,7 @@ const Products = () => {
                 : null}
               {/*  Image */}
               <div className="inline-flex  w-full flex-col">
-                <label htmlFor="img" className="cursor-pointer">
+                <label htmlFor="img" className="cursor-pointer text-gray-600 font-semibold">
                   Image
                 </label>
                 <input
@@ -205,7 +205,7 @@ const Products = () => {
                   value={edit ? edit.title : title}
                   onChange={(e) => setTitle(e.target.value)}
                   placeholder=""
-                  className=" text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
+                  className="border border-gray-600 text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
                 />
               </div>
               <div className="inline-flex  w-full flex-col">
@@ -223,7 +223,7 @@ const Products = () => {
                   value={info}
                   onChange={(e) => setInfo(e.target.value)}
                   placeholder=""
-                  className=" text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
+                  className="border border-gray-600 text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
                 />
               </div>
               <div className="inline-flex  w-full flex-col">
@@ -241,7 +241,7 @@ const Products = () => {
                   value={code}
                   onChange={(e) => setCode(e.target.value)}
                   placeholder=""
-                  className=" text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
+                  className="border border-gray-600 text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
                 />
               </div>
               <div className="inline-flex  w-full flex-col">
@@ -259,7 +259,7 @@ const Products = () => {
                   value={hsn}
                   onChange={(e) => setHsn(e.target.value)}
                   placeholder=""
-                  className=" text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
+                  className="border border-gray-600 text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
                 />
               </div>
               <div className="inline-flex  w-full flex-col">
@@ -277,7 +277,7 @@ const Products = () => {
                   value={gst}
                   onChange={(e) => setGst(e.target.value)}
                   placeholder=""
-                  className=" text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
+                  className="border border-gray-600 text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
                 />
               </div>
               <div className="inline-flex  w-full flex-col">
@@ -295,7 +295,7 @@ const Products = () => {
                   value={withoutGst}
                   onChange={(e) => setWithoutGst(e.target.value)}
                   placeholder=""
-                  className=" text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
+                  className="border border-gray-600 text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
                 />
               </div>
               <div className="inline-flex  w-full flex-col">
@@ -313,7 +313,7 @@ const Products = () => {
                   value={brand}
                   onChange={(e) => setBrand(e.target.value)}
                   placeholder=""
-                  className=" text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
+                  className="border border-gray-600 text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
                 />
               </div>
               <div className="inline-flex  w-full flex-col">
@@ -331,7 +331,7 @@ const Products = () => {
                   value={featuredDetails}
                   onChange={(e) => setFeaturedDetails(e.target.value)}
                   placeholder=""
-                  className=" text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
+                  className="border border-gray-600 text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
                 />
               </div>
               <div className="inline-flex  w-full flex-col">
@@ -349,7 +349,7 @@ const Products = () => {
                   value={policy}
                   onChange={(e) => setPolicy(e.target.value)}
                   placeholder=""
-                  className=" text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
+                  className="border border-gray-600 text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
                 />
               </div>
               <div className="inline-flex  w-full flex-col">
@@ -367,7 +367,7 @@ const Products = () => {
                   value={color}
                   onChange={(e) => setColor(e.target.value)}
                   placeholder=""
-                  className=" text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
+                  className="border border-gray-600 text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
                 />
               </div>
               <div className="inline-flex  w-full flex-col">
@@ -385,7 +385,7 @@ const Products = () => {
                   value={attributes}
                   onChange={(e) => setAttributes(e.target.value)}
                   placeholder=""
-                  className=" text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
+                  className="border border-gray-600 text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
                 />
               </div>
               {/*  price */}
@@ -404,7 +404,7 @@ const Products = () => {
                   type="text"
                   name="price"
                   placeholder=""
-                  className=" text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
+                  className="border border-gray-600 text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
                 />
               </div>
 
@@ -421,7 +421,7 @@ const Products = () => {
                   required
                   type="text"
                   placeholder=""
-                  className=" text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
+                  className="border border-gray-600 text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
                 />
               </div>
 
@@ -438,7 +438,7 @@ const Products = () => {
                   required
                   type="text"
                   placeholder=""
-                  className=" text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
+                  className="border border-gray-600 text-gray-800 tracking-wider text-sm rounded-full py-1 px-2 outline-[rgb(241,146,46)]"
                 >
                   <option>--Select--</option>
                   {category?.map((item) => {
@@ -454,7 +454,7 @@ const Products = () => {
               <button
                 type="submit"
                 value="Add"
-                className="bg-[rgb(241,146,46)] cursor-pointer w-40 hover:bg-[rgb(241,146,46)] py-1 rounded-full"
+                className="bg-red-600 cursor-pointer w-40 hover:bg-red-900 py-1 rounded-full"
               >
                 Add{" "}
               </button>
@@ -463,7 +463,7 @@ const Products = () => {
         </section>
         <div className=" wcomp overflow-y-auto">
           <table className="table-auto  w-full text-left whitespace-no-wrap">
-            <thead>
+            {/* <thead>
               <tr className=" border-b bg-slate-200 shadow-xl text-gray-900">
                 <th className="px-4 py-3 w-36 tracking-widest font-medium md:text-base text-sm rounded-tl-lg ">
                   <AiFillCamera className="text-2xl" />
@@ -485,8 +485,24 @@ const Products = () => {
                   Actions
                 </th>
               </tr>
+            </thead> */}
+            <thead class="text-xs text-gray-700 uppercase  bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+              <tr>
+                <th className="px-4 py-3 w-36 tracking-widest font-medium md:text-base text-sm rounded-tl-lg ">
+                  <AiFillCamera className="text-2xl " />
+                </th>
+                <th scope="col" class="py-3 px-2 text-white	">
+                  Product name
+                </th>
+                <th scope="col" class=" text-white	">
+                  Category
+                </th>
+                <th scope="col" class="py-3 text-white	">
+                  Price
+                </th>
+              </tr>
             </thead>
-            <tbody>
+            {/* <tbody>
               {products?.map((e, i) => {
                 return (
                   <tr key={i} className="tracking-wider text-gray-900 ">
@@ -530,6 +546,59 @@ const Products = () => {
                   </tr>
                 );
               })}
+            </tbody> */}
+            <tbody>
+              <tr class="bg-white border-b white:bg-gray-800 dark:border-gray-700">
+                <th
+                  scope="row"
+                  class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-dark"
+                >
+                  Apple MacBook Pro 17"
+                </th>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  Laptop PC
+                </td>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  Laptop
+                </td>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  $2999
+                </td>
+              </tr>
+              <tr class="bg-white border-b white:bg-gray-800 dark:border-gray-700">
+                <th
+                  scope="row"
+                  class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-dark"
+                >
+                  Microsoft Surface Pro
+                </th>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  Laptop PC
+                </td>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  Laptop PC
+                </td>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  $1999
+                </td>
+              </tr>
+              <tr class="bg-white white:bg-gray-800">
+                <th
+                  scope="row"
+                  class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-dark"
+                >
+                  Magic Mouse 2
+                </th>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  Laptop PC
+                </td>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  Accessories
+                </td>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  $99
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>

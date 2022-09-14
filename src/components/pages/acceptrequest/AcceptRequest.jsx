@@ -79,8 +79,118 @@ const AcceptRequest = () => {
     <>
       <div className="pb-4 sticky top-0  w-full flex justify-between items-center bg-white">
         <span className="tracking-widest text-slate-900 font-semibold uppercase ">
-        Accept Request from Vendors
+          Accept Request from Vendorss
         </span>
+      </div>
+      <div class="grid grid-cols-3 gap-x-18 gap-y-4">
+        <div className="shadow-xl box-content border-2 w-80 ">
+          <img
+            className="h-40 px-20"
+            src="https://cdn-icons-png.flaticon.com/512/4333/4333609.png"
+            alt="Avatar"
+          ></img>
+          <div class="px-6 py-6">
+            <p class="text-gray-700 text-base text-center">John Doe - Engineer</p>
+          </div>
+          <div class="grid grid-cols-6">
+            <button class="bg-transparent col-start-1 col-span-3 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+              Accept
+            </button>
+            <button class="bg-transparent col-end-7 col-span-3 hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded">
+              Reject
+            </button>
+          </div>
+        </div>
+        <div className="shadow-xl box-content border-2 w-80 ">
+          <img
+            className="h-40 px-20"
+            src="https://cdn-icons-png.flaticon.com/512/4333/4333609.png"
+            alt="Avatar"
+          ></img>
+          <div class="px-6 py-6">
+            <p class="text-gray-700 text-base pl-16">John Doe - Engineer</p>
+          </div>
+          <div class="grid grid-cols-6">
+            <button class="bg-transparent col-start-1 col-span-3 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+              Accept
+            </button>
+            <button class="bg-transparent col-end-7 col-span-3 hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded">
+              Reject
+            </button>
+          </div>
+        </div>
+        <div className="shadow-xl box-content border-2 w-80 ">
+          <img
+            className="h-40 px-20"
+            src="https://cdn-icons-png.flaticon.com/512/4333/4333609.png"
+            alt="Avatar"
+          ></img>
+          <div class="px-6 py-6">
+            <p class="text-gray-700 text-base pl-16">John Doe - Engineer</p>
+          </div>
+          <div class="grid grid-cols-6">
+            <button class="bg-transparent col-start-1 col-span-3 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+              Accept
+            </button>
+            <button class="bg-transparent col-end-7 col-span-3 hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded">
+              Reject
+            </button>
+          </div>
+        </div>
+        <div className="shadow-xl box-content border-2 w-80 ">
+          <img
+            className="h-40 px-20"
+            src="https://cdn-icons-png.flaticon.com/512/4333/4333609.png"
+            alt="Avatar"
+          ></img>
+          <div class="px-6 py-6">
+            <p class="text-gray-700 text-base pl-16">John Doe - Engineer</p>
+          </div>
+          <div class="grid grid-cols-6">
+            <button class="bg-transparent col-start-1 col-span-3 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+              Accept
+            </button>
+            <button class="bg-transparent col-end-7 col-span-3 hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded">
+              Reject
+            </button>
+          </div>
+        </div>
+        <div className="shadow-xl box-content border-2 w-80 ">
+          <img
+            className="h-40 px-20"
+            src="https://cdn-icons-png.flaticon.com/512/4333/4333609.png"
+            alt="Avatar"
+          ></img>
+          <div class="px-6 py-6">
+            <p class="text-gray-700 text-base pl-16">John Doe - Engineer</p>
+          </div>
+          <div class="grid grid-cols-6">
+            <button class="bg-transparent col-start-1 col-span-3 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+              Accept
+            </button>
+            <button class="bg-transparent col-end-7 col-span-3 hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded">
+              Reject
+            </button>
+          </div>
+        </div>
+        <div className="shadow-xl box-content border-2 w-80 ">
+          <img
+            className="h-40 px-20"
+            src="https://cdn-icons-png.flaticon.com/512/4333/4333609.png"
+            alt="Avatar"
+          ></img>
+          <div class="px-6 py-6">
+            <p class="text-gray-700 text-base pl-16">John Doe - Engineer</p>
+          </div>
+          <div class="grid grid-cols-6">
+            <button class="bg-transparent col-start-1 col-span-3 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+              Accept
+            </button>
+            <button class="bg-transparent col-end-7 col-span-3 hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded">
+              Reject
+            </button>
+          </div>
+        </div>
       </div>
     </>
   );

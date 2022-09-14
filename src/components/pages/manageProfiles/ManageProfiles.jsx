@@ -5,6 +5,7 @@ import { AiOutlineEdit, AiFillCamera } from "react-icons/ai";
 import { GrFormClose } from "react-icons/gr";
 import { toast } from "react-toastify";
 import "./user.css";
+import ProfileUi from "react-profile-card";
 import {
   CalendarToday,
   LocationSearching,
@@ -83,6 +84,14 @@ const ManageProfiles = () => {
         <span className="tracking-widest text-slate-900 font-semibold uppercase ">
           Manage Profiles
         </span>
+      </div>
+      <div className="grid-rows-1 ">
+        <ProfileUi
+          imgUrl="https://miro.medium.com/max/2048/0*0fClPmIScV5pTLoE.jpg"
+          name="vineet jk"
+          designation="designer"
+          className="pt-6"
+        />
       </div>
       {/* <div className="user">
         <div className="userTitleContainer">

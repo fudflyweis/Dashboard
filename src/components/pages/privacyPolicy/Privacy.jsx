@@ -23,77 +23,77 @@ const Privacy = () => {
   const [price, setPrice] = useState("");
   const [id, setId] = useState();
 
-  const fetchPrivacy = async () => {
-    const url = BaseUrl() + "/privacypolicy/get";
-    try {
-      const res = await axios.get(url);
-      console.log("res", res.data);
-      setPrivacy(res.data);
-      setLoading(false);
-    } catch (err) {
-      console.log("err", err);
-    }
-  };
+  // const fetchPrivacy = async () => {
+  //   const url = BaseUrl() + "/privacypolicy/get";
+  //   try {
+  //     const res = await axios.get(url);
+  //     console.log("res", res.data);
+  //     setPrivacy(res.data);
+  //     setLoading(false);
+  //   } catch (err) {
+  //     console.log("err", err);
+  //   }
+  // };
 
-  useEffect(() => {
-    fetchPrivacy();
-  }, []);
+  // useEffect(() => {
+  //   fetchPrivacy();
+  // }, []);
 
-  const addPrivacy = async (e) => {
-    e.preventDefault();
-    const url = BaseUrl() + "/tnc/add";
+  // const addPrivacy = async (e) => {
+  //   e.preventDefault();
+  //   const url = BaseUrl() + "/tnc/add";
 
-    const data = {
-      description: desc,
-    };
+  //   const data = {
+  //     description: desc,
+  //   };
 
-    try {
-      const res = await axios.post(url, data, auth);
-      console.log("res", res);
-      toast.success("Added Successfully");
-    } catch (err) {
-      console.log("err", err);
-      toast.error("Please try again");
-    } finally {
-      fetchPrivacy();
-    }
-  };
+  //   try {
+  //     const res = await axios.post(url, data, auth);
+  //     console.log("res", res);
+  //     toast.success("Added Successfully");
+  //   } catch (err) {
+  //     console.log("err", err);
+  //     toast.error("Please try again");
+  //   } finally {
+  //     fetchPrivacy();
+  //   }
+  // };
 
-  const deletePrivacy = async (id) => {
-    const url = BaseUrl() + `/privacypolicy/delete/${id}`;
+  // const deletePrivacy = async (id) => {
+  //   const url = BaseUrl() + `/privacypolicy/delete/${id}`;
 
-    try {
-      const res = await axios.delete(url, auth);
-      toast.success("Deleted Successfully");
-      fetchPrivacy();
-    } catch (err) {
-      console.log("err", err);
-      toast.error("Please try again");
-    }
-  };
+  //   try {
+  //     const res = await axios.delete(url, auth);
+  //     toast.success("Deleted Successfully");
+  //     fetchPrivacy();
+  //   } catch (err) {
+  //     console.log("err", err);
+  //     toast.error("Please try again");
+  //   }
+  // };
 
-  const handleClick = (privacy) => {
-    setDesc(privacy.description);
-    setId(privacy._id);
-  };
+  // const handleClick = (privacy) => {
+  //   setDesc(privacy.description);
+  //   setId(privacy._id);
+  // };
 
-  const updatePrivacy = async (e) => {
-    e.preventDefault();
-    const url = BaseUrl() + `/privacypolicy/Update/${id}`;
+  // const updatePrivacy = async (e) => {
+  //   e.preventDefault();
+  //   const url = BaseUrl() + `/privacypolicy/Update/${id}`;
 
-    const data = {
-      description: desc,
-    };
+  //   const data = {
+  //     description: desc,
+  //   };
 
-    try {
-      const res = await axios.patch(url, data, auth);
-      toast.success("Updated Successfully");
-      fetchPrivacy();
-    } catch (err) {
-      console.log("err", err);
-      toast.error("Please try again");
-    }
-  };
+  //   try {
+  //     const res = await axios.patch(url, data, auth);
+  //     toast.success("Updated Successfully");
+  //     fetchPrivacy();
+  //   } catch (err) {
+  //     console.log("err", err);
+  //     toast.error("Please try again");
+  //   }
+  // };
 
   return (
     <>
@@ -139,7 +139,7 @@ const Privacy = () => {
 
             <form
               className="grid  grid-cols-1 gap-x-7 gap-y-4 p-4"
-              onSubmit={id ? updatePrivacy : addPrivacy}
+              // onSubmit={id ? updatePrivacy : addPrivacy}
             >
               <div className="inline-flex  w-full flex-col">
                 <label
@@ -168,7 +168,7 @@ const Privacy = () => {
             </form>
           </div>
         </section>
-        <div className=" wcomp overflow-y-auto">
+        {/* <div className=" wcomp overflow-y-auto">
           <table className="table-auto  w-full text-left whitespace-no-wrap">
             <thead>
               <tr className=" border-b bg-slate-200 shadow-xl text-gray-900">
@@ -210,6 +210,56 @@ const Privacy = () => {
                   </tr>
                 );
               })}
+            </tbody>
+          </table>
+        </div> */}
+        
+        <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
+          <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase  bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+              <tr>
+                <th scope="col" class="py-3 px-6 text-white	">
+                  Description
+                </th>
+                <th scope="col" class="py-3 px-6 text-white	">
+                  Actions
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white border-b white:bg-gray-800 dark:border-gray-700">
+                <th
+                  scope="row"
+                  class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-dark"
+                >
+                  About user analytics
+                </th>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  Added
+                </td>
+              </tr>
+              <tr class="bg-white border-b white:bg-gray-800 dark:border-gray-700">
+                <th
+                  scope="row"
+                  class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-dark"
+                >
+                  Ads usage
+                </th>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  Added
+                </td>
+              </tr>
+              <tr class="bg-white white:bg-gray-800">
+                <th
+                  scope="row"
+                  class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-dark"
+                >
+                  Term 3 about consumer data
+                </th>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  Added
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>

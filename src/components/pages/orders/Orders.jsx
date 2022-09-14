@@ -129,15 +129,15 @@ const Orders = () => {
           </div>
         </section>
         <div className=" wcomp overflow-y-auto">
-          <table className="table-auto  w-full text-left whitespace-no-wrap">
-            <thead>
+          <table className="table-auto h-full w-full text-left whitespace-no-wrap">
+            {/* <thead>
               <tr className=" border-b bg-slate-200 shadow-xl text-gray-900">
                 <th className="px-4 py-3 title-font tracking-widest rounded-tr-lg font-medium md:text-base text-sm  ">
                   Orders
                 </th>
               </tr>
-            </thead>
-            {loading ? (
+            </thead> */}
+            {/* {loading ? (
               <Oval />
             ) : (
               <tbody>
@@ -167,7 +167,148 @@ const Orders = () => {
                   );
                 })}
               </tbody>
-            )}
+            )} */}
+            <thead class="text-xs text-gray-700 uppercase h-full bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+              <tr>
+                <th scope="col" class="py-3 px-6 text-white	">
+                  Order name
+                </th>
+                <th scope="col" class="py-3 px-6 text-white	">
+                  Order Status
+                </th>
+                <th scope="col" class="py-3 px-6 text-white	">
+                  Price
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white border-b white:bg-gray-800 dark:border-gray-700">
+                <th
+                  scope="row"
+                  class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-dark"
+                >
+                  Apple MacBook Pro 17"
+                </th>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  Completed
+                </td>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  $2999
+                </td>
+              </tr>
+              <tr class="bg-white border-b white:bg-gray-800 dark:border-gray-700">
+                <th
+                  scope="row"
+                  class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-dark"
+                >
+                  Microsoft Surface Pro
+                </th>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  Pending
+                </td>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  $1999
+                </td>
+              </tr>
+              <tr class="bg-white border-b white:bg-gray-800 dark:border-gray-700">
+                <th
+                  scope="row"
+                  class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-dark dark:border-gray-700"
+                >
+                  Magic Mouse 2
+                </th>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  Completed
+                </td>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  $99
+                </td>
+              </tr>
+              <tr class="bg-white border-b white:bg-gray-800 dark:border-gray-700">
+                <th
+                  scope="row"
+                  class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-dark "
+                >
+                  Apple MacBook Pro 17"
+                </th>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  Completed
+                </td>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  $2999
+                </td>
+              </tr>
+              <tr class="bg-white border-b white:bg-gray-800 dark:border-gray-700">
+                <th
+                  scope="row"
+                  class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-dark"
+                >
+                  Microsoft Surface Pro
+                </th>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  Pending
+                </td>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  $1999
+                </td>
+              </tr>
+              <tr class="bg-white border-b dark:border-gray-700 white:bg-gray-800">
+                <th
+                  scope="row"
+                  class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-dark"
+                >
+                  Magic Mouse 2
+                </th>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  Completed
+                </td>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  $99
+                </td>
+              </tr>
+              <tr class="bg-white border-b white:bg-gray-800 dark:border-gray-700">
+                <th
+                  scope="row"
+                  class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-dark dark:border-gray-700"
+                >
+                  Apple Ipad
+                </th>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  Completed
+                </td>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  $99
+                </td>
+              </tr>
+              <tr class="bg-white border-b white:bg-gray-800 dark:border-gray-700">
+                <th
+                  scope="row"
+                  class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-dark "
+                >
+                  Apple MacBook Pro 17"
+                </th>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  Completed
+                </td>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  $2999
+                </td>
+              </tr>
+              <tr class="bg-white border-b white:bg-gray-800 dark:border-gray-700">
+                <th
+                  scope="row"
+                  class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-dark"
+                >
+                  Microsoft Surface Pro
+                </th>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  Pending
+                </td>
+                <td class="py-4 px-6 font-medium text-gray-900 dark:text-dark">
+                  $1999
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </section>

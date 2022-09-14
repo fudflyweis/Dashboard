@@ -2,6 +2,11 @@
   flex: 4;
 }
 
+.profileCards {
+  padding-top: 50px;
+  padding-left: 10px;
+}
+
 .userListUser {
   display: flex;
   align-items: center;

@@ -139,7 +139,7 @@ const UploadServices = () => {
   return (
     <>
       <div className="flex sticky top-0 py-3 px-5 bg-slate-100 justify-between">
-        <span className=" font-semibold text-[rgb(241,146,46)] ">
+        <span className=" font-semibold text-red-600 ">
         Upload Services
         </span>
       </div>
@@ -427,7 +427,7 @@ const UploadServices = () => {
         <button
           type="submit"
           value="Add"
-          className="bg-[rgb(241,146,46)] cursor-pointer w-40 hover:bg-[rgb(241,146,46)] py-1 rounded-full mt-8"
+          className="bg-red-600 cursor-pointer w-40 hover:bg-red-900 py-1 rounded-r-lg rounded-l-lg mt-8"
         >
           Add{" "}
         </button>

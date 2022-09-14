@@ -34,10 +34,10 @@ const Navbar = ({ hamb, setHamb }) => {
       >
         <div className="bg-slate-100 sm:h-[40vh] h-[10vh] overflow-y-auto  lg:w-3/6  md:w-4/6 w-5/6 mx-auto  rounded-lg">
           <div className="flex sticky top-0 py-3 px-5 bg-slate-100 justify-between">
-            <span className=" font-semibold text-[rgb(241,146,46)] relative">
+            <span className=" font-semibold text-black-600 relative">
               Settings
             </span>
-            <div className="text-[rgb(241,146,46)] py-0.5 text-2xl cursor-pointer font-medium tracking-wider">
+            <div className="text-red-600 py-0.5 text-2xl cursor-pointer font-medium tracking-wider">
               <IoMdClose
                 onClick={() => {
                   setPopup(false);
@@ -89,7 +89,7 @@ const Navbar = ({ hamb, setHamb }) => {
             <button
               type="submit"
               value="Add"
-              className="bg-[rgb(241,146,46)] cursor-pointer w-40 hover:bg-[rgb(241,146,46)] py-1 rounded-full"
+              className="bg-red-600 cursor-pointer text-white w-40 hover:bg-red-900 py-1 rounded-full"
             >
               Add{" "}
             </button>
@@ -120,7 +120,7 @@ const Navbar = ({ hamb, setHamb }) => {
         {/* Logout Btn */}
         <FiSettings
           onClick={() => setPopup(!popup)}
-          className="text-2xl sm:text-3xl font-bold text-[rgb(241,146,46)] cursor-pointer"
+          className="text-2xl sm:text-3xl font-bold text-red-600 cursor-pointer"
         />
       </div>
     </>

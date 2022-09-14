@@ -12,8 +12,8 @@ const HOC = (Wcomponenet) => {
           <div
             className={
               hamb
-                ? " absolute top-0 z-30 md:w-auto shadow-md bg-slate-200  w-60 transition-all md:-left-full left duration-150  h-screen  left-0 "
-                : " md:w-72 z-30 bg-slate-200  shadow-md  md:static absolute top-0 -left-full  h-screen transition-all duration-150 "
+                ? " absolute top-0 z-30 md:w-auto shadow-md bg-slate-200  w-60 transition-all md:-left-full left duration-150  h-max  left-0 "
+                : " md:w-72 z-30 bg-slate-200  shadow-md  md:static absolute top-0 -left-full  h-max transition-all duration-150 "
             }
           >
             <Sidebar hamb={hamb} setHamb={setHamb} />
